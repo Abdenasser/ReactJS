@@ -1,4 +1,4 @@
-<html>
+
   <head>
     <script src="../build/react.js"></script>
     <script src="../build/react-dom.js"></script>
@@ -12,7 +12,6 @@
     var Badge = React.createClass({
       render: function() {
 
-
         return <button className="btn btn-primary" type="button">
           {this.props.title} <span className="badge">{this.props.number}</span>
         </button>
@@ -20,8 +19,8 @@
     });
 
     var options = {
-      title: 'inbox',
-      number: 32
+      title: 'sent',
+      number: 12
     }
 
     // ask react to render this class
@@ -31,4 +30,3 @@
     // where to place the rendered element in the dom
     ReactDOM.render(element, document.body);
   </script>
-</html>
